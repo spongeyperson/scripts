@@ -1,8 +1,8 @@
 #!/bin/sh
 
 # Unbind from Current Driver
-echo -n "0000:12:00.0" > /sys/bus/pci/devices/0000:12:00.0/driver/unbind || echo "GPU Unbinding Failed"
-echo -n "0000:12:00.1" > /sys/bus/pci/devices/0000:12:00.1/driver/unbind || echo "GPU Audio Unbinding Failed"
+echo -n "0000:47:00.0" > /sys/bus/pci/devices/0000:12:00.0/driver/unbind || echo "GPU Unbinding Failed"
+echo -n "0000:47:00.1" > /sys/bus/pci/devices/0000:12:00.1/driver/unbind || echo "GPU Audio Unbinding Failed"
 
 # Bind to VFIO-PCI
 #echo -n "10de 1b80" > /sys/bus/pci/drivers/vfio-pci/new_id
